@@ -1,0 +1,134 @@
+/* Full-Screen Background */
+.background {
+  margin: 0;
+  padding: 0;
+  background: url("./592545406.jpg") no-repeat center center fixed;
+  background-size: cover; /* Ensures full coverage */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-position 1.5s ease-in-out; /* Smooth movement */
+}
+
+/* Background movement when reviews are shown */
+.background.scrolled {
+  background-position: center 70%; /* Moves the background downward */
+}
+
+/* General Container */
+.container {
+  max-width: 600px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers child elements horizontally */
+  position: relative;
+  z-index: 10;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%; /* Ensures full container width */
+  max-width: 400px; /* Limits the form width */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the input elements */
+  width: 100%;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus {
+  border: 2px solid #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+.textarea {
+  resize: none;
+}
+
+/* Star Rating Section */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.star {
+  font-size: 2rem;
+  cursor: pointer;
+  color: lightgray;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.star.filled {
+  color: gold;
+  transform: scale(1.2);
+}
+
+/* Button Styling */
+.button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: white;
+  background: #28a745;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.button:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+/* Output Section */
+.output {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
+/* Reviews Text */
+.output p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.output strong {
+  color: #000;
+}
