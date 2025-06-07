@@ -16,6 +16,7 @@ A dynamic full-stack web application built using **React.js** and **SQL** that e
 * **Backend**: SQL (with a Node.js/Express or PHP backend – specify if applicable)
 * **Styling**: CSS (or Tailwind/Bootstrap – specify if used)
 
+INSTALL THE NODE MODULES
 
 In the project directory, you can run:
 
